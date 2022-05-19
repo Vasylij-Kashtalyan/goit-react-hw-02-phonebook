@@ -28,7 +28,7 @@ class Form extends Component {
     render() {
         return (
           <form className={s.form} onSubmit={this.handlerSubmit}>
-            <label className={s.form__label} id={this.idInput}>Name
+            <label className={s.form__label}>Name
               <input
                 className={s.form__input}
                 value={this.state.name}
@@ -40,7 +40,7 @@ class Form extends Component {
                 onChange={this.handlerChande}
               />
             </label>
-            <label className={s.form__label} id={this.idInput}>Number 
+            <label className={s.form__label}>Number 
               <input
                 className={s.form__input}
                 value={this.state.number}

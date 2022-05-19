@@ -26,7 +26,7 @@ Contact.propTypes = {
     handelContactFilter: PropTypes.arrayOf(
         PropTypes.shape({
             name: PropTypes.string.isRequired,
-            number: PropTypes.number.isRequired,
+            number: PropTypes.string.isRequired,
             id: PropTypes.string.isRequired,
         })
     ),
