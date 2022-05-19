@@ -17,7 +17,7 @@ class Form extends Component {
     
     handlerSubmit = eve => {
         eve.preventDefault();
-        this.props.Submit(this.state);
+        this.props.onSubmit(this.state);
         this.reset();
     }
     
@@ -59,7 +59,7 @@ class Form extends Component {
     }
 }
 Form.propTypes = {
-    Submit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired
 }
 
 export default Form;

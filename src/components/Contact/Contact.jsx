@@ -23,7 +23,13 @@ function Contact({ handelContactFilter,deleteContact }) {
 }
 
 Contact.propTypes = {
-    handelContactFilter: PropTypes.array.isRequired,
+    handelContactFilter: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            number: PropTypes.number.isRequired,
+            id: PropTypes.string.isRequired,
+        })
+    ),
     deleteContact: PropTypes.func.isRequired,
 }
 
